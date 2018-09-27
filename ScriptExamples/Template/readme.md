@@ -20,5 +20,10 @@
 
 ## What permissions are required to run this?
 
+{{License Level/Tenant level}}
+
+## What needs to change in order to run this?
+Set up script config files, set environment variables, ect
+
 ## Known issues
 {{Any known issues}}
