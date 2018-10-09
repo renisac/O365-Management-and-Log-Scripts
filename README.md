@@ -69,7 +69,7 @@ Organizations can buy licenses ad-hoc through either their reseller or the Micro
 ### Logs Types available by Collection Method
 
 | Log Type | OCAS | MCAS| Management API | PowerShell | Admin Portal |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | Inbound/Outbound mail | no | no | no| **Yes**| **Yes**|
 | SafeLinks clicks      | ?  | ? |  ?| **Yes**| **Yes**|
 | DLP Logs              | no | **Yes**  | **Yes** | **Yes**| **Yes** |
