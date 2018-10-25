@@ -1,4 +1,4 @@
-# Gather Message Trace Logs
+# Template for script contribution 
 
 ## What this script does
 
