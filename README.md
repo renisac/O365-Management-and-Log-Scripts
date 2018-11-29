@@ -112,7 +112,7 @@ You can write custom scripts to query MCAS via PowerShell. Microsoft has provide
 #### PowerShell
 **Note**: that this method can be slow for large tenants. There is a POC that speeds this data collection up and will be shared
 
-Using the Management API, you can write custom scripts to export the data. Microsoft employee blah has written a [PowerShell script](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/O365InvestigationDataAcquisition.ps1) that allows you to export this data to MySQL, Azure Blob Storage, Azure SQL, JSON or CSV. 
+Using the Management API, you can write custom scripts to export the data. Microsoft employee [Brandon Koeller](https://github.com/bkoeller) has written a [PowerShell script](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/O365InvestigationDataAcquisition.ps1) that allows you to export this data to MySQL, Azure Blob Storage, Azure SQL, JSON or CSV. 
 
 #### Splunk Addon
 Splunk provides an add on that will ingest the data for your tenant (from the Management API). The add on is available from the the [Splunk base](https://splunkbase.splunk.com/app/4055/) site. Depending on usage, user counts, and audited events, you can expect ~1 GB/day per 10,000 users.
