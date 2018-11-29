@@ -1,0 +1,30 @@
+Organization : SomeUni.onmicrosoft.com
+Domain :
+Date : 8/1/2018 5:19:04 PM
+Title : SomeEmailSubject
+Location : <SomeIdentifier@prod.outlook.com>
+Severity : Low
+Size : 0
+Source : EXCH
+Actor : SomeUser@SomeUni.edu
+DlpCompliancePolicy : DLP-U.S. Financial Data,DLP-U.S. Financial Data,DLP-U.S. Financial Data,DLP-U.S. Financial Data
+DlpComplianceRule : _Exe:Warn-Low coun:SomeDLPIdentifier,_Exe:Warn-Low coun:SomeDLPIdentifier,_Exe:Warn-Low
+coun:SomeDLPIdentifier,_Exe:Warn-Low coun:SomeDLPIdentifier
+UserAction :
+Justification :
+SensitiveInformationType :
+SensitiveInformationCount : 1
+SensitiveInformationConfidence : 85
+EventType : DLPByIncidentIdPolicyHits
+Action : GenerateIncidentReport,SetAuditSeverityLow,NotifyUser
+ObjectId : da3368df-227c-4652-e000-08d5f7d302cd
+DistinctRuleCount : 1
+DistinctPolicyCount : 1
+RuleList : {_Exe:Warn-Low coun:SomeDLPIdentifier, _Exe:Warn-Low coun:SomeDLPIdentifier, _Exe:Warn-Low
+coun:SomeDLPIdentifier, _Exe:Warn-Low coun:SomeDLPIdentifier}
+PolicyList : {DLP-U.S. Financial Data, DLP-U.S. Financial Data, DLP-U.S. Financial Data, DLP-U.S. Financial Data}
+ActionList : {, GenerateIncidentReport, SetAuditSeverityLow, NotifyUser}
+SensitiveInformationTypeList : {Credit Card Number}
+SensitiveInformationCountList : {4}
+SensitiveInformationConfidenceList : {85}
+IncidentId : SomeUniIncidentID

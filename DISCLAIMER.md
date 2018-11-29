@@ -13,6 +13,3 @@ technical, functional, and cultural environments.
 1.3 The REN-ISAC, its sponsoring organizations, and members accept no responsibility for negative
 impacts of any sort that results from local actions taken on information sent to the membership
 generally, or to specific institutions.
-
-
-## Script samples

@@ -1,1 +1,0 @@
-write-host "This is some script that will generate some text log"
