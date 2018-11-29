@@ -1,9 +1,24 @@
-# Tag Charge
-* What logs are available by SKU (This document)
-* Proof Of Concepts to extract logs
-* Offloading into splunk/elk/siem
+# O365 Log Processing
 
-## Common EDU License types
+Contributions are welcome, whether new scripts, documentation, or improvements to existing work. Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+### Table of Contents
+1. [Objectives](#objectives)
+2. [Common EDU License Types](#common-edu-license-types)
+3. [Logs Within Office 365](#logs-within-office-365)
+4. [Exporting Logs](#exporting-logs)
+5. [Scripts for Log Processing](#scripts-for-log-processing)
+
+
+## Objectives
+- Describe what O365 logs are available per common EDU license types
+- Describe how and with what tools the logs can be accessed
+- Describe how the logs may be exported to external tools (e.g. SIEM)
+- Provide scripts that retrieve log information for specific investigative actions.
+- Nurture community-of-practice contributions to sustain and increase the value of this open resource.
+
+## Common EDU License Types
+
 ### A1
 A1 is the bottom tier, free licenses for Microsoft O365. No additional security tools are available in this tier.
 
@@ -16,6 +31,7 @@ A3 is the middle tier license for Microsoft O365. A3 includes EMS A3 which adds 
 * **Azure Information Protection P1**: Encryption for all files and storage locations; Cloud-based file tracking
 * **Microsoft Advanced Threat Analytics**: Protection from advanced targeted attacks leveraging user and entity behavioral analytics
 * **Microsoft Intune**: Mobile device and app management to protect corporate apps and data on any device
+
 ### A5
 A5 is the top tier license for Microsoft O365. A5 includes EMS A3 (Intune and Advanced Threat Analytics) + EMS A5 which adds the following security tools:
 
@@ -29,9 +45,9 @@ A5 is the top tier license for Microsoft O365. A5 includes EMS A3 (Intune and Ad
 Organizations can buy licenses ad-hoc through either their reseller or the Microsoft O365 Admin Portal. Please note that while some features can be enabled for the whole tenant by purchasing only 1 license, this can lead to your tenant not being properly licensed or service degradation. You should only enable the features for the users that you purchased licenses for.
 
 ### A1/3/5 comparison chart
-![](media\O365_Component_Map.png)
+![](media/O365_Component_Map.png)
 
-## Logs within Office 365
+## Logs Within Office 365
 ### Types of logs
 * Email Inbound/Outbound
 * Safe Links clicks
@@ -40,7 +56,7 @@ Organizations can buy licenses ad-hoc through either their reseller or the Micro
 * Exchange Online Actions
 * OneDrive/SPO
 
-**Note**: The Activities API (AKA: Magic Unicorn Tool) is no longer available.<sup>3</sup>
+**Note**: The Activities API (AKA: Magic Unicorn Tool) is no longer available.<sup>[3](#footnote3)</sup>
 
 ### Log sources
 * OCAS - O365 Cloud App Security (formerly known as Advanced Security Management-ASM)
@@ -62,9 +78,9 @@ Organizations can buy licenses ad-hoc through either their reseller or the Micro
 | License | OCAS | MCAS| Management API | PowerShell | Admin Portal |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**A1**   | no| no| **Yes** | **Yes** | **Yes** |
-|**A3**   | **Yes**<sup>1</sup> | no| **Yes** | **Yes** | **Yes** |
-|**A5**   | **Yes**<sup>1</sup> | **Yes**<sup>1</sup> | **Yes** | **Yes** | **Yes** |
-|**Ad-hoc**| **Yes**<sup>1</sup> | **Yes**<sup>1</sup> | **Yes** | **Yes** | **Yes** |
+|**A3**   | **Yes**<sup>[1](#footnote1)</sup> | no| **Yes** | **Yes** | **Yes** |
+|**A5**   | **Yes**<sup>[1](#footnote1)</sup> | **Yes**<sup>[1](#footnote1)</sup> | **Yes** | **Yes** | **Yes** |
+|**Ad-hoc**| **Yes**<sup>[1](#footnote1)</sup> | **Yes**<sup>[1](#footnote1)</sup> | **Yes** | **Yes** | **Yes** |
 
 ### Logs Types available by Collection Method
 
@@ -77,7 +93,7 @@ Organizations can buy licenses ad-hoc through either their reseller or the Micro
 | Exchange Online Actions| **Yes**  | **Yes**  | **Yes**| **Yes**| no|
 | OneDrive/SPO Logs     | **Yes**  | **Yes**  | **Yes** | **Yes**| **Yes** |
 | Export predefined alerts to SIEM | **Yes** | ?  | ? | ?| ? |
-| Export raw data to SIEM        | no | **Yes**  | **Possible**<sup>2</sup> | **Possible**<sup>2</sup>| no |
+| Export raw data to SIEM        | no | **Yes**  | **Possible**<sup>[2](#footnote2)</sup> | **Possible**<sup>[2](#footnote2)</sup>| no |
 
 
 ## Exporting Logs
@@ -102,12 +118,21 @@ Using the Management API, you can write custom scripts to export the data. Micro
 Splunk provides an add on that will ingest the data for your tenant (from the Management API). The add on is available from the the [Splunk base](https://splunkbase.splunk.com/app/4055/) site. Depending on usage, user counts, and audited events, you can expect ~1 GB/day per 10,000 users.
 
 ### Message Trace logs
-Message trace logs appear to only be available by 
+
+    Content to be contributed here.
+
+## Scripts for Log Processing
+
+A variety of community-developed scripts are provided, supporting log query and retrieval for specific investigative actions. View the [scripts](scripts) directory
+
+---
 ---
 
-<sup>1</sup>: Requires a license for each user that is being logged. OCAS/MCAS supports scoped deployments now based on Azure AD group.
+### Footnotes
 
-<sup>2</sup>: Local scripting & infrastructure development, operations, and maintenance required.
+<a name="footnote1">1</a>: Requires a license for each user that is being logged. OCAS/MCAS supports scoped deployments now based on Azure AD group.
 
-<sup>3</sup>: Official statement (July 2018) from Microsoft about the Activities API (AKA: Magic Unicorn Tool): 
+<a name="footnote2">2</a>: Local scripting & infrastructure development, operations, and maintenance required.
+
+<a name="footnote3">3</a>: Official statement (July 2018) from Microsoft about the Activities API (AKA: Magic Unicorn Tool): 
 > Microsoft has always discouraged the use of undocumented APIs, as it can lead to incorrect assumptions, poor user experience or broken functionality. In this case, the particular Outlook Mail REST API referenced and underlying telemetry was built to support service to service communication and does not guarantee the type of complete and accurate activities data that would be necessary to support security investigation scenarios. Following feedback, we are disabling this API.
