@@ -1,3 +1,5 @@
+To contribute a script visit [CONTRIBUTING](/CONTRIBUTING.md)
+
 ## Scripts
 
 | script  | description / use case |
