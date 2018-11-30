@@ -19,7 +19,7 @@ Contributions are welcome, whether new scripts, documentation, or improvements t
 
 ## Common EDU License Types
 
-Please note that MS currently (Fall 2018) identifies five (5) license tiers or skus:
+Please note that MS currently (Fall 2018) identifies five (5) license tiers or SKUs:
 
 1. Office 365 Education A1
 2. Office 365 Education A3
@@ -27,7 +27,7 @@ Please note that MS currently (Fall 2018) identifies five (5) license tiers or s
 4. Microsoft 365 Education A3
 5. Microsoft 365 Education A5
 
-One of the chief distinctions between #1-3 and #4-5 above is Microsoft's licensing model based on knowledge workers vs. FTEs (https://blog.shi.com/software/new-licensing-microsoft-enrollment-education-solutions/). 
+One of the chief distinctions between #1-3 and #4-5 above is Microsoft's licensing model based on knowledge workers vs. FTEs (https://blog.shi.com/software/new-licensing-microsoft-enrollment-education-solutions/). With the exception of A1, the following refer to the Microsoft 365 Education SKUs.
 
 ### A1: Office 365 Education
 A1 is the bottom tier, free licenses for Microsoft O365. No additional security tools are available in this tier.
