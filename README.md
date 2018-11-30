@@ -29,12 +29,12 @@ Please note that MS currently (Fall 2018) identifies five (5) license tiers or s
 
 One of the chief distinctions between #1-3 and #4-5 above is Microsoft's licensing model based on knowledge workers vs. FTEs (https://blog.shi.com/software/new-licensing-microsoft-enrollment-education-solutions/). 
 
-### A1
+### A1: Office 365 Education
 A1 is the bottom tier, free licenses for Microsoft O365. No additional security tools are available in this tier.
 
 **Note:** Alumni and other "loosely affiliated" populations are typically not assigned A3/A5 licenses (depending on the institution), so it's safe to assume you'll have users at this tier with fewer security tools.
 
-### A3
+### A3: Microsoft 365 Education
 A3 is the middle tier license for Microsoft O365. A3 includes EMS A3 which adds the following security tools:
 
 * **Azure AD Premium P1**: Secure single sign-on to cloud and on-premises app MFA, conditional access, and advanced security reporting
@@ -42,7 +42,7 @@ A3 is the middle tier license for Microsoft O365. A3 includes EMS A3 which adds 
 * **Microsoft Advanced Threat Analytics**: Protection from advanced targeted attacks leveraging user and entity behavioral analytics
 * **Microsoft Intune**: Mobile device and app management to protect corporate apps and data on any device
 
-### A5
+### A5: Microsoft 365 Education
 A5 is the top tier license for Microsoft O365. A5 includes EMS A3 (Intune and Advanced Threat Analytics) + EMS A5 which adds the following security tools:
 
 * **Azure AD Premium P2 (includes P1 features)**: Identity and access management with advanced protection for users and privileged identities
