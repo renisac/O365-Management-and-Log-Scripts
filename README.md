@@ -27,6 +27,8 @@ Please note that MS currently (Fall 2018) identifies four (4) license tiers:
 4. Microsoft 365 Education A3
 5. Microsoft 365 Education A5
 
+One of the chief distinctions between #1-3 and #4-5 above is Microsoft's licensing model based on knowledged workers vs. FTEs. 
+
 ### A1
 A1 is the bottom tier, free licenses for Microsoft O365. No additional security tools are available in this tier.
 
