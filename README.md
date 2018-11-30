@@ -19,7 +19,7 @@ Contributions are welcome, whether new scripts, documentation, or improvements t
 
 ## Common EDU License Types
 
-Please note that MS currently (Fall 2018) identifies four (4) license tiers:
+Please note that MS currently (Fall 2018) identifies five (5) license tiers or skus:
 
 1. Office 365 Education A1
 2. Office 365 Education A3
