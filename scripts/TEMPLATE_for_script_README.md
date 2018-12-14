@@ -46,6 +46,6 @@ Essentially, the --help information if not available directly via the script.
 
 Any known issues.
 
-### Credits
+### Acknowledgements and Credits
 
 If the author wishes attribution and/or other credit(s) should be acknowledged.
