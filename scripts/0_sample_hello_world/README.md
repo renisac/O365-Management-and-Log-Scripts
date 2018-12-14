@@ -28,6 +28,6 @@ None.
 
 None.
 
-### Credits
+### Acknowledgements Credits
 
 Honorable mention, Brian Kernighan for the first documented "hello, world" program, ref https://medium.com/@ozanerhansha/on-the-origin-of-hello-world-61bfe98196d5
