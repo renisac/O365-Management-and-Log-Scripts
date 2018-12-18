@@ -128,8 +128,10 @@ Using the Management API, you can write custom scripts to export the data. Micro
 Splunk provides an add on that will ingest the data for your tenant (from the Management API). The add on is available from the the [Splunk base](https://splunkbase.splunk.com/app/4055/) site. Depending on usage, user counts, and audited events, you can expect ~1 GB/day per 10,000 users.
 
 ### Message Trace logs
-
-    Content to be contributed here.
+Microsoft 365 provides admins with access to Message trace logs either programatically (over PowerShell) or via a GUI (Security and Compliance Center). 
+For help on using the GUI, see [Message trace in the Office 365 Security & Compliance Center
+](https://support.office.com/en-us/article/message-trace-in-the-office-365-security-compliance-center-3e64f99d-ac33-4aba-91c5-9cb4ca476803). 
+For pull these logs automatically over PowerShell see [Gather Message Trace Logs Script sample]()
 
 ## Scripts for Log Processing
 
