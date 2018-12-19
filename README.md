@@ -37,7 +37,7 @@ A1 is the bottom tier, free licenses for Microsoft O365. No additional security 
 ### A3: Microsoft 365 Education
 A3 is the middle tier license for Microsoft O365. A3 includes EMS A3 which adds the following security tools:
 
-* **Azure AD Premium P1**: Secure single sign-on to cloud and on-premises app MFA, conditional access, and advanced security reporting
+* **Azure AD Premium P1/Azure AD Plan 1**: Secure single sign-on to cloud and on-premises app MFA, conditional access, and advanced security reporting
 * **Azure Information Protection P1**: Encryption for all files and storage locations; Cloud-based file tracking
 * **Microsoft Advanced Threat Analytics**: Protection from advanced targeted attacks leveraging user and entity behavioral analytics
 * **Microsoft Intune**: Mobile device and app management to protect corporate apps and data on any device
@@ -45,7 +45,7 @@ A3 is the middle tier license for Microsoft O365. A3 includes EMS A3 which adds 
 ### A5: Microsoft 365 Education
 A5 is the top tier license for Microsoft O365. A5 includes EMS A3 (Intune and Advanced Threat Analytics) + EMS A5 which adds the following security tools:
 
-* **Azure AD Premium P2 (includes P1 features)**: Identity and access management with advanced protection for users and privileged identities
+* **Azure AD Premium P2/Azure AD Plan 2 (includes P1 features)**: Identity and access management with advanced protection for users and privileged identities
 * **Azure Information Protection P2 (includes P1 features)**: Intelligent classification and encryption for files shared inside and outside your organization
 * **Microsoft Cloud App Security**: Enterprise-grade visibility, control, and protection for your cloud applications
 * **Advanced Threat Protection**: Safe Links, Safe Attachments, Phish (spoof) policies
