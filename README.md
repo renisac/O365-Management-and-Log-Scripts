@@ -55,6 +55,7 @@ A5 is the top tier license for Microsoft O365. A5 includes EMS A3 (Intune and Ad
 Organizations can buy licenses ad-hoc through either their reseller or the Microsoft O365 Admin Portal. Please note that while some features can be enabled for the whole tenant by purchasing only 1 license, this can lead to your tenant not being properly licensed or service degradation. You should only enable the features for the users that you purchased licenses for.
 
 ### A1/3/5 comparison chart
+Microsoft shared the below image durring dicussions on the change from ECALs to the M365 model. A more recent comparison document is linked below.
 ![](media/O365_Component_Map.png)
 
 For a more up to date version, please see the [Microsoft 365 Education - Services and features](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education#services-and-features) comparison page
