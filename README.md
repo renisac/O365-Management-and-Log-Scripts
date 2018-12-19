@@ -57,6 +57,7 @@ Organizations can buy licenses ad-hoc through either their reseller or the Micro
 ### A1/3/5 comparison chart
 ![](media/O365_Component_Map.png)
 
+For a more up to date version, please see the [Microsoft 365 Education - Services and features](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education#services-and-features) comparison page
 ## Logs Within Office 365
 ### Types of logs
 * Email Inbound/Outbound
