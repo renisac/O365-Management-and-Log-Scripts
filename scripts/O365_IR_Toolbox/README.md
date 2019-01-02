@@ -1,4 +1,4 @@
-## O365_ISAM_Toolbox.ps1
+## O365_IR_Toolbox.ps1
 
 ### Use case
 
@@ -35,7 +35,7 @@ A1 or higher
 
 ### How to run the script
 ```` powershell
-.\O365_ISAM_Toolbox.ps1
+.\O365_IR_Toolbox.ps1
 ````
 
 ### Known issues

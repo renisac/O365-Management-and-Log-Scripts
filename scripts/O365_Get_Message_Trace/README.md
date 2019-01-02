@@ -9,11 +9,11 @@ Use this PowerShell script to pull O365 message tracking info.  If you need to p
 Run script and enter O365 admin creds. This PowerShell script uses Inbound/Outbound mail actions to pull e-mail flow meta data and outputs a csv file to the Desktop. 
 
 ### Data sensitivity
-Meta data on email. 
--To
--From
--Subject
--IP Addresses
+E-mail Meta Data: 
+- To
+- From
+- Subject
+- IP Addresses
 
 ### Local environment requirements
 None
