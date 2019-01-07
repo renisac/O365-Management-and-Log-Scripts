@@ -115,7 +115,7 @@ OCAS supports exporting alerts to your SIEM by using the [SIEM Connector](https:
 
 ### MCAS
 #### SIEM Connector
-MCAS logs and alerts can be exported using the [SIEM Connector](https://docs.microsoft.com/en-us/cloud-app-security/siem) provided by Microsoft. The connector supports exporting as Generic CEF and Micro Focus ArcSight. Both Splunk and ELK appear to be able to import this format; ; ref: Splunk [Deploy and Use Splunk App for CEF](https://docs.splunk.com/Documentation/CEFapp/2.0.1/DeployCEFapp/Howtheappworks) and ELK: [Cef codec plugin](https://www.elastic.co/guide/en/logstash/current/plugins-codecs-cef.html)
+MCAS logs and alerts can be exported using the [SIEM Connector](https://docs.microsoft.com/en-us/cloud-app-security/siem) provided by Microsoft. The connector supports exporting as Generic CEF and Micro Focus ArcSight. Both Splunk and ELK appear to be able to import this format; ref: Splunk [Deploy and Use Splunk App for CEF](https://docs.splunk.com/Documentation/CEFapp/2.0.1/DeployCEFapp/Howtheappworks) and ELK: [Cef codec plugin](https://www.elastic.co/guide/en/logstash/current/plugins-codecs-cef.html)
 
 #### PowerShell
 You can write custom scripts to query MCAS via PowerShell. Microsoft has provided a [PowerShell module](https://github.com/Microsoft/MCAS) to help with querying this data.
