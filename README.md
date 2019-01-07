@@ -139,7 +139,7 @@ For pull these logs automatically over PowerShell see [Gather Message Trace Logs
 
 ## Scripts for Log Processing
 
-A variety of community-developed scripts are provided, supporting log query and retrieval for specific investigative actions. View the [scripts](scripts) directory. Please consider [contributing your helpful scripts](CONTRIBUTING.md).
+A number of community-developed scripts are provided, supporting log query and retrieval, and management actions for specific investigative purposes. View the [scripts](scripts) directory. Please consider [contributing your helpful scripts](CONTRIBUTING.md).
 
 ## Log Examples
 
