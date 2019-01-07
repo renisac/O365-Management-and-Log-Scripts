@@ -73,17 +73,17 @@ For a more up to date version, please see the [Microsoft 365 Education - Service
 ### Log sources
 * OCAS - O365 Cloud App Security (formerly known as Advanced Security Management-ASM)
 * MCAS - MS Cloud App Security
-* Management API
+* [Management API](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference)
 * Powershell
-  * Search-UnifiedAuditLog
-  * Get-MessageTrace
+  * [Search-UnifiedAuditLog](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps)
+  * [Get-MessageTrace](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-messagetrace?view=exchange-ps)
 * Admin Portal
-  * Audit log search
-  * Message Trace search
-  * Safe Links Reports
+  * [Audit log search](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)
+  * [Message Trace search](https://docs.microsoft.com/en-us/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results)
+  * [Safe Links Reports](https://support.office.com/en-us/article/view-reports-for-office-365-advanced-threat-protection-e47e838c-d99e-4c0b-b9aa-e66c4fae902f)
   * Azure AD
-    * Sign-in Logs
-    * Audit Logs
+    * [Sign-in Logs](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins)
+    * [Audit Logs](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs)
 
 ### Log Collection Methods available by SKU
 
