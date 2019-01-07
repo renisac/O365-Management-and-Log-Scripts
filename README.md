@@ -1,4 +1,4 @@
-# O365 Log Processing
+# Security-Focused O365 Management and Log Scripts
 
 Contributions are welcome, whether new scripts, documentation, or improvements to existing work. Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
