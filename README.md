@@ -8,7 +8,7 @@ Contributions are welcome, whether new scripts, documentation, or improvements t
 3. [Logs Within Office 365](#logs-within-office-365)
 4. [Exporting Logs](#exporting-logs)
 5. [Scripts for Log Processing](#scripts-for-log-processing)
-
+6. Log Examples
 
 ## Objectives
 - Describe what O365 logs are available per common EDU license types
@@ -139,7 +139,11 @@ For pull these logs automatically over PowerShell see [Gather Message Trace Logs
 
 ## Scripts for Log Processing
 
-A variety of community-developed scripts are provided, supporting log query and retrieval for specific investigative actions. View the [scripts](scripts) directory
+A variety of community-developed scripts are provided, supporting log query and retrieval for specific investigative actions. View the [scripts](scripts) directory. Please consider [contributing your helpful scripts](CONTRIBUTING.md).
+
+## Log Examples
+
+Various [log examples](example_log_data) are provided. Please consider contributing.
 
 ---
 ---
