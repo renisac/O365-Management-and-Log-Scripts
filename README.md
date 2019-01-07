@@ -8,7 +8,7 @@ Contributions are welcome, whether new scripts, documentation, or improvements t
 3. [Logs Within Office 365](#logs-within-office-365)
 4. [Exporting Logs](#exporting-logs)
 5. [Scripts for Log Processing](#scripts-for-log-processing)
-6. Log Examples
+6. [Log Examples](#log-examples)
 
 ## Objectives
 - Describe what O365 logs are available per common EDU license types
