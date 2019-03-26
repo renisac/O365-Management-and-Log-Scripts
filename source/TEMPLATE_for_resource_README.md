@@ -1,23 +1,23 @@
-# Template for Script README.md 
+# Template for Code README.md 
 
-Please use the following format for the README.md for script submissions. View this document Raw and copy/paste to grab the markdown formatting.
+Please use the following format for the README.md for code/resource submissions. View this document Raw and copy/paste to grab the markdown formatting.
 
 ***
 
-## Script_Name
+## Resource_Name
 
-The script name should be descriptive, e.g. O365_Get_InboxRules.
+The resource name should be descriptive, e.g. O365_Get_InboxRules.
 
 ### Use case
 
-Describe the operational purpose for this script. For example, considering the O365_Get_InboxRules mentioned above, the Use Case may be:
+Describe the operational purpose for this code. For example, considering the O365_Get_InboxRules mentioned above, the Use Case may be:
 
 > Use after an account has been compromised to check for inbox rules the attacker may have set.
 
 ### Brief description
 
 Succinctly describe the:
-- action(s) performed by the script, 
+- action(s) performed by the code, 
 - log collection method, 
 - logs touched, and
 - character of the output data
@@ -38,9 +38,9 @@ Environment variables, configuration files, &c; or, "none".
 
 Microsoft license/tenant level, &c.
 
-### How to run the script
+### How to run the code
 
-Essentially, the --help information if not available directly via the script.
+Essentially, the --help information if not available directly at runtime, including any prereqs if code involves compiling binaries.
 
 ### Known issues
 
