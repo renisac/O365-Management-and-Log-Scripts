@@ -5,6 +5,8 @@ To contribute a resource visit [CONTRIBUTING](/CONTRIBUTING.md)
 | resource  | description / use case | code type |
 | --- | --- | --- |
 | [0_sample_hello_world](0_sample_hello_world) | Sample for how code should be submitted and documented in this repository | pwsh |
+| [CSU_Log_Pull_Library](CSU_Log_Pull_Library) | DLL for talking to the MS O365 API | c# |
+| [CSU_EO_Log_Pull](CSU_EO_Log_Pull) | Implementation of Log Pull Library to retrieve Exchange Online log dumps | c# |
 | [MessageTraceLogGatherer](MessageTraceLogGatherer) | Gathers message trace logs from M365 in order to be ingested in a SIEM | pwsh |
 | [O365_Clear_Forwarding](O365_Clear_Forwarding) | Clear forwarding on an O365 mailbox | pwsh |
 | [O365_Find_Forwarding_Duplicates](O365_Find_Forwarding_Duplicates) | Pull all O365 mailbox forwards in the tenant and find duplicates | pwsh |
