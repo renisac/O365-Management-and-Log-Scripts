@@ -1,4 +1,4 @@
-## To contribute: 
+## To contribute
 
 **If you're a git user:** Fork the repository, make your changes, and send us pull requests via Issues.
 
