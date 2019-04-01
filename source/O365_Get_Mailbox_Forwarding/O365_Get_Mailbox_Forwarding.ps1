@@ -1,7 +1,7 @@
-﻿#
-# Use the following PowerShell script to get an O365 mailboxes inbox rules.  This is a 
-# good script to use after an account has been compromised to check for malicious looking inbox
-# rules the attacker may have set.
+# Use the following PowerShell script to pull O365 mailbox forwarding info.  Once an attacker
+# has compromised an O365 account, sometimes they will setup forwarding to receive a copy
+# of the victims e-mail.  If you find a "funny" looking forward with this script, to can
+# use the O365_Set_Forwarding_To_Null script to clear the forward.
 # 
 # Dependiences:
 #  1) Install the 64-bit version of the Microsoft Online Services Sign-in Assistant:
@@ -14,12 +14,11 @@
 # Instructions:
 # Run script and enter your O365 admin creds
 # Enter the primary SMTP of the O365 mailbox in question (EX: jdk63d@mail.missouri.edu)
-# Enter q to exit script
 # 
 # Output: screen
 #
 # Written By: Josh Hartley
-# University of Missouri
+# Univerity of Missouri
 #
 
 
@@ -77,7 +76,7 @@ function accountInput($formName) {
 
     $form.Topmost = $true
 
-    # If the OK button is selected run search, else cancel button was selected so quit search
+    # If the OK button is selected run script, else cancel button was selected so quit search
     if ($dialogResult -eq "OK"){
         
         $inputBox.Text
@@ -86,7 +85,6 @@ function accountInput($formName) {
         "quit"
     }          
 }
-
 
 
 # Do while to run authenication
@@ -110,7 +108,7 @@ Do {
         Import-PSSession $Session
 
         # Create a connection to O365
-        $Connection = Connect-MsolService –Credential $UserCredential
+        $Connection = Connect-MsolService �Credential $UserCredential
     }
 
     # If the Session variable is NULL credentials failed
@@ -126,19 +124,19 @@ Do {
 # If auth was successful or credentials not NULL, then run main program
 If (($Session -ne $NULL) -or ($UserCredential -ne $NULL)) {
 	Do {
-		$email = accountInput "Get Account Inbox Rules"
+		$email = accountInput "Get Account Forwarding Info"
 	
 		if ($email -ne "quit") {
 		
-			# Get and print inbox rule info:
-            $returnedInfo = Get-InboxRule -Mailbox $email | Select-Object Identity, Enabled, Name, Description, ForwardTo, DeleteMessage | Format-List
+			# Get and print Forwording info:
+            $returnedInfo = Get-Mailbox  $email | Select-Object userprincipalname,forwardingsmtpaddress,DeliverToMailboxAndForward,WhenChanged | Format-List
             
             if ($returnedInfo -ne $NULL) {
                 
                 $returnedInfo = $returnedInfo | Format-List | Out-String
                 Write-Host $returnedInfo
-                # display account info
-                [System.Windows.Forms.MessageBox]::Show($returnedInfo,'Inbox Rules')
+                # display account reset info
+                [System.Windows.Forms.MessageBox]::Show($returnedInfo,'Forwarding Info')
 
             } else {
                 

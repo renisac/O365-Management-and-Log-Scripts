@@ -1,21 +1,21 @@
-# Security-Focused O365 Management and Log Scripts
+# Security-Focused O365 Management and Log Resources
 
-Contributions are welcome, whether new scripts, documentation, or improvements to existing work. Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Contributions are welcome, whether new code, documentation, or improvements to existing work. Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ### Table of Contents
 1. [Objectives](#objectives)
 2. [Common EDU License Types](#common-edu-license-types)
 3. [Logs Within Office 365](#logs-within-office-365)
 4. [Exporting Logs](#exporting-logs)
-5. [Scripts for Log Processing](#scripts-for-log-processing)
+5. [Resources for Log Processing](#resources-for-log-processing)
 6. [Log Examples](#log-examples)
 
 ## Objectives
 - Describe what O365 logs are available per common EDU license types
 - Describe how and with what tools the logs can be accessed
 - Describe how the logs may be exported to external tools (e.g. SIEM)
-- Provide scripts that retrieve log information for specific investigative actions.
-- Nurture community-of-practice contributions to sustain and increase the value of this open resource.
+- Provide resources (code/scripts, documentation) that retrieve log information for specific investigative actions
+- Nurture community-of-practice contributions to sustain and increase the value of this open resource
 
 ## Common EDU License Types
 
@@ -135,11 +135,11 @@ Microsoft 365 provides admins with access to Message trace logs either programat
 For help on using the GUI, see [Message trace in the Office 365 Security & Compliance Center
 ](https://support.office.com/en-us/article/message-trace-in-the-office-365-security-compliance-center-3e64f99d-ac33-4aba-91c5-9cb4ca476803). 
 
-For pull these logs automatically over PowerShell see [Gather Message Trace Logs Script sample](scripts/MessageTraceLogGatherer)
+For pull these logs automatically over PowerShell see [Gather Message Trace Logs Script sample](source/MessageTraceLogGatherer)
 
-## Scripts for Log Processing
+## Resources for Log Processing
 
-A number of community-developed scripts are provided, supporting log query and retrieval, and management actions for specific investigative purposes. View the [scripts](scripts) directory. Please consider [contributing your helpful scripts](CONTRIBUTING.md).
+A number of community-developed resources are provided, supporting log query and retrieval, and management actions for specific investigative purposes. View the [source](source) directory. Please consider [contributing your helpful code](CONTRIBUTING.md).
 
 ## Log Examples
 

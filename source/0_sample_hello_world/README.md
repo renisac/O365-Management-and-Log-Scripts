@@ -2,7 +2,7 @@
 
 ### Use case
 
-Provide a sample for how scripts should be submitted and documented in this repository.
+Provide a sample for how resources should be submitted and documented in this repository.
 
 ### Brief description 
 
@@ -14,13 +14,13 @@ None.
 
 ### Local environment requirements
 
-Powershell.
+PowerShell.
 
 ### License and/or permissions required
 
 None.
 
-### How to run the script
+### How to run the code
 
 <...>\hello_world.ps1
 
