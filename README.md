@@ -3,14 +3,17 @@
 Contributions are welcome, whether new code, documentation, or improvements to existing work. Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ### Table of Contents
+
 1. [Objectives](#objectives)
 2. [Common EDU License Types](#common-edu-license-types)
 3. [Logs Within Office 365](#logs-within-office-365)
 4. [Exporting Logs](#exporting-logs)
 5. [Resources for Log Processing](#resources-for-log-processing)
 6. [Log Examples](#log-examples)
+7. [References](#references)
 
 ## Objectives
+
 - Describe what O365 logs are available per common EDU license types
 - Describe how and with what tools the logs can be accessed
 - Describe how the logs may be exported to external tools (e.g. SIEM)
@@ -27,14 +30,16 @@ Please note that MS currently (Fall 2018) identifies five (5) license tiers or S
 4. Microsoft 365 Education A3
 5. Microsoft 365 Education A5
 
-One of the chief distinctions between #1-3 and #4-5 above is Microsoft's licensing model based on knowledge workers vs. FTEs (https://blog.shi.com/software/new-licensing-microsoft-enrollment-education-solutions/). With the exception of A1, the following refer to the Microsoft 365 Education SKUs.
+One of the chief distinctions between #1-3 and #4-5 above is Microsoft's licensing model based on knowledge workers vs. FTEs (<https://blog.shi.com/software/new-licensing-microsoft-enrollment-education-solutions/>). With the exception of A1, the following refer to the Microsoft 365 Education SKUs.
 
 ### A1: Office 365 Education
+
 A1 is the bottom tier, free licenses for Microsoft O365. No additional security tools are available in this tier.
 
 **Note:** Alumni and other "loosely affiliated" populations are typically not assigned A3/A5 licenses (depending on the institution), so it's safe to assume you'll have users at this tier with fewer security tools.
 
 ### A3: Microsoft 365 Education
+
 A3 is the middle tier license for Microsoft O365. A3 includes EMS A3 which adds the following security tools:
 
 * **Azure AD Premium P1/Azure AD Plan 1**: Secure single sign-on to cloud and on-premises app MFA, conditional access, and advanced security reporting
@@ -43,6 +48,7 @@ A3 is the middle tier license for Microsoft O365. A3 includes EMS A3 which adds 
 * **Microsoft Intune**: Mobile device and app management to protect corporate apps and data on any device
 
 ### A5: Microsoft 365 Education
+
 A5 is the top tier license for Microsoft O365. A5 includes EMS A3 (Intune and Advanced Threat Analytics) + EMS A5 which adds the following security tools:
 
 * **Azure AD Premium P2/Azure AD Plan 2 (includes P1 features)**: Identity and access management with advanced protection for users and privileged identities
@@ -52,15 +58,20 @@ A5 is the top tier license for Microsoft O365. A5 includes EMS A3 (Intune and Ad
 * **Threat Intelligence**: Dashboard of attacks detected against your tenant with easy remediation steps.
 
 ### Ad-hoc
+
 Organizations can buy licenses ad-hoc through either their reseller or the Microsoft O365 Admin Portal. Please note that while some features can be enabled for the whole tenant by purchasing only 1 license, this can lead to your tenant not being properly licensed or service degradation. You should only enable the features for the users that you purchased licenses for.
 
 ### A1/3/5 comparison chart
+
 Microsoft shared the below image during dicussions on the change from ECALs to the M365 model. A more recent comparison document is linked below.
 ![](media/O365_Component_Map.png)
 
 For a more up to date version, please see the [Microsoft 365 Education - Services and features](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education#services-and-features) comparison page
+
 ## Logs Within Office 365
+
 ### Types of logs
+
 * Email Inbound/Outbound
 * Safe Links clicks
 * DLP Logs
@@ -71,6 +82,7 @@ For a more up to date version, please see the [Microsoft 365 Education - Service
 **Note**: The Activities API (AKA: Magic Unicorn Tool) is no longer available.<sup>[3](#footnote3)</sup>
 
 ### Log sources
+
 * OCAS - O365 Cloud App Security (formerly known as Advanced Security Management-ASM)
 * MCAS - MS Cloud App Security
 * [Management API](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference)
@@ -107,29 +119,37 @@ For a more up to date version, please see the [Microsoft 365 Education - Service
 | Export predefined alerts to SIEM | **Yes** | ?  | ? | ?| ? |
 | Export raw data to SIEM        | no | **Yes**  | **Possible**<sup>[2](#footnote2)</sup> | **Possible**<sup>[2](#footnote2)</sup>| no |
 
-
 ## Exporting Logs
+
 ### OCAS
+
 #### SIEM Connector
+
 OCAS supports exporting alerts to your SIEM by using the [SIEM Connector](https://docs.microsoft.com/en-us/cloud-app-security/siem) provided by Microsoft. The connector supports exporting as Generic CEF and Micro Focus ArcSight. Both Splunk and ELK appear to be able to import this format; ref: Splunk [Deploy and Use Splunk App for CEF](https://docs.splunk.com/Documentation/CEFapp/2.0.1/DeployCEFapp/Howtheappworks) and ELK: [Cef codec plugin](https://www.elastic.co/guide/en/logstash/current/plugins-codecs-cef.html)
 
 ### MCAS
+
 #### SIEM Connector
+
 MCAS logs and alerts can be exported using the [SIEM Connector](https://docs.microsoft.com/en-us/cloud-app-security/siem) provided by Microsoft. The connector supports exporting as Generic CEF and Micro Focus ArcSight. Both Splunk and ELK appear to be able to import this format; ref: Splunk [Deploy and Use Splunk App for CEF](https://docs.splunk.com/Documentation/CEFapp/2.0.1/DeployCEFapp/Howtheappworks) and ELK: [Cef codec plugin](https://www.elastic.co/guide/en/logstash/current/plugins-codecs-cef.html)
 
 #### PowerShell
 You can write custom scripts to query MCAS via PowerShell. Microsoft has provided a [PowerShell module](https://github.com/Microsoft/MCAS) to help with querying this data.
 
 ### Management API
+
 #### PowerShell
+
 **Note**: that this method can be slow for large tenants. There is a POC that speeds this data collection up and will be shared
 
 Using the Management API, you can write custom scripts to export the data. Microsoft employee [Brandon Koeller](https://github.com/bkoeller) has written a [PowerShell script](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/O365InvestigationDataAcquisition.ps1) that allows you to export this data to MySQL, Azure Blob Storage, Azure SQL, JSON or CSV. 
 
 #### Splunk Addon
+
 Splunk provides an add on that will ingest the data for your tenant (from the Management API). The add on is available from the the [Splunk base](https://splunkbase.splunk.com/app/4055/) site. Depending on usage, user counts, and audited events, you can expect ~1 GB/day per 10,000 users.
 
 ### Message Trace logs
+
 Microsoft 365 provides admins with access to Message trace logs either programatically (over PowerShell) or via a GUI (Security and Compliance Center). 
 
 For help on using the GUI, see [Message trace in the Office 365 Security & Compliance Center
@@ -144,6 +164,10 @@ A number of community-developed resources are provided, supporting log query and
 ## Log Examples
 
 Various [log examples](example_log_data) are provided. Please consider contributing.
+
+## References
+
+Various [references](REFS.md) are provided to helpful commands and documentation related to O365 Security & Log management. Please consider contributing.
 
 ---
 ---
