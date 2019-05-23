@@ -27,10 +27,10 @@ Please note that MS currently (Fall 2018) identifies five (5) license tiers or S
 1. Office 365 Education A1
 2. Office 365 Education A3
 3. Office 365 Education A5
-4. Microsoft 365 Education A3
-5. Microsoft 365 Education A5
+4. Microsoft 365 Education A3 (O365 A3 + EMS A3 + Windows 10)
+5. Microsoft 365 Education A5 (O365 A5 + EMS A5 + Windows 10)
 
-One of the chief distinctions between #1-3 and #4-5 above is Microsoft's licensing model based on knowledge workers vs. FTEs (<https://blog.shi.com/software/new-licensing-microsoft-enrollment-education-solutions/>). With the exception of A1, the following refer to the Microsoft 365 Education SKUs.
+In the fall of 2018, Microsoft updated their names and definitions of paid licensees for the M365 Academic plans. Knowledge Workers are now called Education Qualified Users (EQUs). Student worker employees no longer require a paid license. More details can be seen in this [EES-2018-Changes.pdf](media\EES-2018-Changes.pdf).
 
 ### A1: Office 365 Education
 
@@ -42,60 +42,87 @@ A1 is the bottom tier, free licenses for Microsoft O365. No additional security 
 
 A3 is the middle tier license for Microsoft O365. A3 includes EMS A3 which adds the following security tools:
 
-* **Azure AD Premium P1/Azure AD Plan 1**: Secure single sign-on to cloud and on-premises app MFA, conditional access, and advanced security reporting
-* **Azure Information Protection P1**: Encryption for all files and storage locations; Cloud-based file tracking
-* **Microsoft Advanced Threat Analytics**: Protection from advanced targeted attacks leveraging user and entity behavioral analytics
-* **Microsoft Intune**: Mobile device and app management to protect corporate apps and data on any device
+- **Azure AD Premium P1/Azure AD Plan 1**: Secure single sign-on to cloud and on-premises app MFA, conditional access, and advanced security reporting
+
+- **Azure Information Protection P1**: Encryption for all files and storage locations; Cloud-based file tracking
+
+- **Microsoft Advanced Threat Analytics**: Protection from advanced targeted attacks leveraging user and entity behavioral analytics
+
+- **Microsoft Intune**: Mobile device and app management to protect corporate apps and data on any device
 
 ### A5: Microsoft 365 Education
 
 A5 is the top tier license for Microsoft O365. A5 includes EMS A3 (Intune and Advanced Threat Analytics) + EMS A5 which adds the following security tools:
 
-* **Azure AD Premium P2/Azure AD Plan 2 (includes P1 features)**: Identity and access management with advanced protection for users and privileged identities
-* **Azure Information Protection P2 (includes P1 features)**: Intelligent classification and encryption for files shared inside and outside your organization
-* **Microsoft Cloud App Security**: Enterprise-grade visibility, control, and protection for your cloud applications
-* **Advanced Threat Protection**: Safe Links, Safe Attachments, Phish (spoof) policies
-* **Threat Intelligence**: Dashboard of attacks detected against your tenant with easy remediation steps.
+- **Access Reviews**:
+Recertify, attest, and audit users' access to resources to ensure access is appropriate and reviewed on a continual basis
+
+- **Azure AD Premium P2/Azure AD Plan 2 (includes P1 features)**: Identity and access management with advanced protection for users and privileged identities
+
+- **Azure Information Protection P2 (includes P1 features)**: Intelligent classification and encryption for files shared inside and outside your organization
+
+- **Azure Identity Protection**:
+Automated responses to detected suspicious actions related to user identities
+
+- **Microsoft Cloud App Security**: Enterprise-grade visibility, control, and protection for your cloud applications
+
+- **Advanced Threat Protection**: Safe Links, Safe Attachments, Phish (spoof) policies
+
+- **Privileged Identity Management**:
+Manage, control, and monitor access to roles across AAD, O365, Intune, etc.
+
+- **Threat Intelligence**: Dashboard of attacks detected against your tenant with easy remediation steps.
 
 ### Ad-hoc
 
-Organizations can buy licenses ad-hoc through either their reseller or the Microsoft O365 Admin Portal. Please note that while some features can be enabled for the whole tenant by purchasing only 1 license, this can lead to your tenant not being properly licensed or service degradation. You should only enable the features for the users that you purchased licenses for.
+Organizations can buy licenses ad-hoc through either their reseller or the Microsoft O365 Admin Portal. Please note that while some features can be enabled for the whole tenant by purchasing only 1 license, this can lead to your tenant not being properly licensed or service degradation. You should only enable the features for users for whom you purchased licenses.
 
-### A1/3/5 comparison chart
+### A3/5 comparison chart
 
-Microsoft shared the below image during dicussions on the change from ECALs to the M365 model. A more recent comparison document is linked below.
-![](media/O365_Component_Map.png)
+Aaron Dinnage, a Microsoft employee helping government sectors, routinely provides updated graphics for plan comparisons. His GitHub repo is linked below.
+![Microsoft EMS A3/A5 Comparison Graphic](media/EMS_Education_Licensing_(Simple)_(Square).png)
 
-For a more up to date version, please see the [Microsoft 365 Education - Services and features](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education#services-and-features) comparison page
+![Microsoft Office 365 A3/A5 Comparison Graphic](media/Office_365_Education_Licensing_(Portrait).png)
+
+For the latest version of this, and other, charts released by Aaron, please see his [Microsoft Licensing GitHub repo](https://github.com/AaronDinnage/Licensing).
 
 ## Logs Within Office 365
 
 ### Types of logs
 
-* Email Inbound/Outbound
-* Safe Links clicks
-* DLP Logs
-* Azure AD Logs
-* Exchange Online Actions
-* OneDrive/SPO
+- Email Inbound/Outbound
+
+- Safe Links clicks
+
+- DLP Logs
+
+- Azure AD Logs
+
+- Exchange Online Actions
+
+- OneDrive/SPO
 
 **Note**: The Activities API (AKA: Magic Unicorn Tool) is no longer available.<sup>[3](#footnote3)</sup>
 
 ### Log sources
 
-* OCAS - O365 Cloud App Security (formerly known as Advanced Security Management-ASM)
-* MCAS - MS Cloud App Security
-* [Management API](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference)
-* Powershell
-  * [Search-UnifiedAuditLog](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps)
-  * [Get-MessageTrace](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-messagetrace?view=exchange-ps)
-* Admin Portal
-  * [Audit log search](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)
-  * [Message Trace search](https://docs.microsoft.com/en-us/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results)
-  * [Safe Links Reports](https://support.office.com/en-us/article/view-reports-for-office-365-advanced-threat-protection-e47e838c-d99e-4c0b-b9aa-e66c4fae902f)
-  * Azure AD
-    * [Sign-in Logs](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins)
-    * [Audit Logs](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs)
+- OCAS - O365 Cloud App Security (formerly known as Advanced Security Management-ASM)
+
+- MCAS - MS Cloud App Security
+
+- [Management API](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference)
+
+- Powershell
+  - [Search-UnifiedAuditLog](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps)
+  - [Get-MessageTrace](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-messagetrace?view=exchange-ps)
+
+- Admin Portal
+  - [Audit log search](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)
+  - [Message Trace search](https://docs.microsoft.com/en-us/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results)
+  - [Safe Links Reports](https://support.office.com/en-us/article/view-reports-for-office-365-advanced-threat-protection-e47e838c-d99e-4c0b-b9aa-e66c4fae902f)
+  - Azure AD
+    - [Sign-in Logs](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins)
+    - [Audit Logs](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs)
 
 ### Log Collection Methods available by SKU
 
@@ -170,7 +197,6 @@ Various [log examples](example_log_data) are provided. Please consider contribut
 Various [references](REFS.md) are provided to helpful commands and documentation related to O365 Security & Log management. Please consider contributing.
 
 ---
----
 
 ### Footnotes
 
@@ -178,5 +204,5 @@ Various [references](REFS.md) are provided to helpful commands and documentation
 
 <a name="footnote2">2</a>: Local scripting & infrastructure development, operations, and maintenance required.
 
-<a name="footnote3">3</a>: Official statement (July 2018) from Microsoft about the Activities API (AKA: Magic Unicorn Tool): 
+<a name="footnote3">3</a>: Official statement (July 2018) from Microsoft about the Activities API (AKA: Magic Unicorn Tool):
 > Microsoft has always discouraged the use of undocumented APIs, as it can lead to incorrect assumptions, poor user experience or broken functionality. In this case, the particular Outlook Mail REST API referenced and underlying telemetry was built to support service to service communication and does not guarantee the type of complete and accurate activities data that would be necessary to support security investigation scenarios. Following feedback, we are disabling this API.

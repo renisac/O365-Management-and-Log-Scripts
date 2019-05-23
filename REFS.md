@@ -35,3 +35,9 @@ Invalidates active O365 session and OAuth session refresh tokens
 ### US-CERT CISA O365 Security Observations:
 
 <https://www.us-cert.gov/ncas/analysis-reports/AR19-133A>
+
+---
+
+### Licensing Comparison Charts
+
+<https://github.com/AaronDinnage/Licensing>
