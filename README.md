@@ -30,7 +30,7 @@ Please note that MS currently (Fall 2018) identifies five (5) license tiers or S
 4. Microsoft 365 Education A3 (O365 A3 + EMS A3 + Windows 10)
 5. Microsoft 365 Education A5 (O365 A5 + EMS A5 + Windows 10)
 
-In the fall of 2018, Microsoft updated their names and definitions of paid licensees for the M365 Academic plans. Knowledge Workers are now called Education Qualified Users (EQUs). Student worker employees no longer require a paid license. More details can be seen in this [EES-2018-Changes.pdf](media\EES-2018-Changes.pdf).
+In the fall of 2018, Microsoft updated their names and definitions of paid licensees for the M365 Academic plans. Knowledge Workers are now called Education Qualified Users (EQUs). Student worker employees no longer require a paid license. More details can be seen in this [EES-2018-Changes.pdf](media/EES-2018-Changes.pdf).
 
 ### A1: Office 365 Education
 
