@@ -194,7 +194,7 @@ Various [log examples](example_log_data) are provided. Please consider contribut
 
 ## References
 
-Various [references](REFS.md) are provided to helpful commands and documentation related to O365 Security & Log management. Please consider contributing.
+Various [references](REFS.md) are provided to helpful commands, PowerShell modules, and documentation related to O365 Security & Log management. Please consider contributing.
 
 ---
 
