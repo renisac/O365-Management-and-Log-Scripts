@@ -52,7 +52,7 @@ Start-HawkUserInvestigation -UserPrincipalName <UPN>
 
 <https://www.powershellgallery.com/packages/HAWK>
 
-https://github.com/Canthv0/hawk
+<https://github.com/Canthv0/hawk>
 
 ---
 
