@@ -30,6 +30,30 @@ Invalidates active O365 session and OAuth session refresh tokens
 
 <https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/Revoke-SPOUserSession>
 
+### HAWK
+
+Designed to ease the burden on O365 administrators who are performing forensic analysis in their M365 tenant. It accelerates the gathering of data from multiple sources in the service.
+
+Installation: 
+
+```powershell
+Install-Module -Name Hawk
+Import-Module -Name Hawk
+```
+
+Getting Started:
+
+```powershell
+Start-HawkTenantInvestigation
+Start-HawkUserInvestigation -UserPrincipalName <UPN>
+```
+
+#### Sources
+
+<https://www.powershellgallery.com/packages/HAWK>
+
+https://github.com/Canthv0/hawk
+
 ---
 
 ### US-CERT CISA O365 Security Observations:
