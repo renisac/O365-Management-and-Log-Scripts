@@ -56,7 +56,17 @@ Start-HawkUserInvestigation -UserPrincipalName <UPN>
 
 ---
 
-### US-CERT CISA O365 Security Observations:
+### Capturing and Visualizing Office 365 Security Logs
+
+Uses Python 3 and the AAD reporting API to retrieve Sign-In and Audit Logs, then store them in an S3 bucket
+
+<https://journeyofthegeek.com/2019/01/30/capturing-and-visualizing-office-365-security-logs-part-1/>
+
+<https://github.com/mattfeltonma/lambda-azureadlogs>
+
+---
+
+### US-CERT CISA O365 Security Observations
 
 <https://www.us-cert.gov/ncas/analysis-reports/AR19-133A>
 
