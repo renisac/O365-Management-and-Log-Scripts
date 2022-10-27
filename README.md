@@ -82,7 +82,7 @@ Organizations can buy licenses ad-hoc through either their reseller or the Micro
 Aaron Dinnage, a Microsoft employee helping government sectors, routinely provides updated graphics for plan comparisons. His GitHub repo is linked below.
 ![Microsoft EMS A3/A5 Comparison Graphic](media/Microsoft_365_Education_on_a_Page(cropped_resized).png)
 
-![Microsoft Office 365 A3/A5 Comparison Graphic](media/Office_365_Education_Licensing.png)
+![Microsoft Office 365 A3/A5 Comparison Graphic](media/Office_365_Education.png)
 
 For the latest version of this, and other, charts released by Aaron, please see his [Microsoft Licensing GitHub repo](https://github.com/AaronDinnage/Licensing).
 
